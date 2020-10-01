@@ -1,131 +1,232 @@
-/* Configuração página*/
-body { 
+/* Configuração corpo da página*/
+html, body {
     margin:0;
-    padding:0;
-    box-sizing: border-box;    
-}
-
-:root {
-    font-size: 60%;
-}
-
-
-/* Configuração da "capa" */ 
- .logo-project {
-    position: absolute;
-    width: 1225px;
-    height: 515.96px;
-    left: 107px;
-    top: 83px;
-    padding: 10px;
-    margin:10px;
-    border:10px;
-}
-
-.logo-project h1 {
-    position:absolute;
-    left: 380px;
-    top: 145px;
     font-family: Prociono;
     font-style: normal;
     font-weight: normal;
+}
+
+/*Configuração do menu*/
+header {
+    background-color:rgb(44, 176, 224);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10; /*elemento mais externo a ser exibido*/
+}
+header #logo {
+    width: 115px;
+    position: absolute;
+    left: 5px;
+    margin-top: 1%;
+    margin-left: 1%;
+  
+}
+header #menu {
+    float: right;
+    margin-right:1%;
+    margin-top: 0px;
+    list-style: none; /*retira as bolinhas do menu*/
+}
+header li {
+    float: left; /*posicionar os itens do menu lateralmente*/
+    text-align: center;
+}
+header li a {
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.normal {
+    padding: 15 5 15 5;
+}
+.big{
+    padding: 9 5 9 5;
+}
+/*Estilização da lista do menu*/
+header li:hover{
+    padding: 5 10 1 10;
+    transition: initial .4s linear;
+}
+
+/*Configuração da Capa*/
+#website-cover {
+    background: url("img/070-074_mineracao-digital_289-0-1140.jpg");
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+}
+h1 {
+    padding-top: 10%;
+    margin-block-end: 0;
     font-size: 46px;
-    line-height: 45px;
-    align-items: center;
+    line-height: 42px;
+    color: whitesmoke;
+    text-shadow: 1.5px 1px black;
+}
+h2, #ods-in-mining, .Drummond {
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+}
+h2 {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-block-end: 0;
+    font-size: 22px;
+    line-height: 22px;
+}
+.Drummond{
+    margin-top:5px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: right;
+}
+#ods-in-mining {
+    border: 1px whitesmoke solid;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*Configurações que se repetem nas seções do site*/
+h3 { /*Titulo*/ 
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+} 
+hr {
+    width: 30px;
+}
+h4 {
+    font-size:18px;
+    line-height: 18px;
+    text-align: center;
+    color: black;
+}
+.img-mining { /*imagens*/
+    width: 100%;
+    text-align: left;
+    margin-left:0;
+}
+#font { /*fonte das imagens*/
+    color: black;
+    text-decoration: none;
+    text-align: initial;
+    font-size: 12px;
+    line-height: 12px;
+}
+section { /*seções*/
+    padding: 20px;
+    float: left;
+}
+.colunm-two, .colunm-four { /*configuração das colunas*/
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.colunm-two { /*configuração das colunas que são duplas*/
+    width: 40%;
+}
+.colunm-four { /*configuração das colunas que são quadruplas*/
+    width: 15%;
+}
+.justify { /*configuração das colunas*/
+    text-align: justify;
+}
+.center {
+    text-align: center;
+}
+.explanatory-link{
+    text-decoration: none;
+    color: olive;
+}
+
+/*Configuração das seções*/
+#the-project, #the-mining-and-the-society, #recycling, #recycling-second-part, #recycling-third-part, #projections-and-extrapolations, #understand-more, #points, #about-me {
+    padding: 10px;
+    background-color: white;
     text-align: center; 
 }
+/*configuração das bordas das seções*/
+.burlywood {
+  border-left: 2.9vw burlywood solid;    
+}
+.orange{
+   border-left: 2.9vw #FFE082 solid;  
+}
+.yellow {
+    border-left: 2.9vw rgb(255, 255, 134) solid;    
+}
+.light-blue{
+    border-left: 2.9vw cadetblue solid
+}
 
-.logo-project h2{
-    position: absolute;
-    left: 347px;
-    top: 249px;
+/*Configuração dos icones e do vídeo da seção: RECICLAGEM DE ELETRÔNICOS*/
+.video-recycling-first-part{
+    padding-top: 5%;
+}
+.icon {
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    margin: 0 auto;
+}
+.colunm-four:hover > .icon {
+    background:#FFE082;
+  }
+.center-text-recycle{
+    margin:8px;
+}
 
-    font-family: Prociono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 20px;
-    display:flex;
-    align-items: center;
+/* Configuração dos videos da seção: ENTENDA MAIS*/
+#video {
+    height: 80%;
+    width: 95%;
+    border: 5px;
+}
+
+#points img {
+    width: 5rem;
+    height: 5rem;
+}
+/*Configuração da lista */
+#points li{
+  text-align: justify;  
+  padding: 5 10 1 10;
+}
+
+/*Configuração da foto da seção: SOBRE MIM */
+.img-about-me {
+    width: 110%;
     text-align: center;
+    padding-top: 9.5%;
 }
 
-.logo-project img {
-    position: absolute;
-    left: 518px;
-    top: -37px;
-    width: 543px;
-    height: 340.55px;
+/* Configuração do roda pé*/
+footer {
+    width: 100%;
+    background-color: gray;
+    float: left;
+    color: whitesmoke;
 }
-
-
-.logo-project p {
-    position: absolute;
-    top: 319px;
-    font-family: Prociono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 29px;
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+footer p {
+    margin: 0;
+}
+footer h4{
+    color:whitesmoke;
+    text-align:left;
+}
+.icons-footer {
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    width: 25px;
+    height: 20px;
+}
+.email, .linkedin, .instagram {
     display: flex;
     align-items: center;
-    text-align: justify;
 }
-
-/*Configuração da Mineração no Brasil*/ 
-.mining-story {
-    position: absolute;
-    width: 1231px;
-    height: 700px;
-    left: 107px;
-    top: 558px;
-    padding: 10px;
-    margin:10px;
-    border:10px;
-}
-    
-.mining-story h1 { 
-    position: absolute;
-    width: 624px;
-    height: 49px;
-    left: 328px;
-    top: 20px;
-    
-    font-family: Prociono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.mining-story p {
-    position: absolute;
-    width: 580px;
-    height: 390px;
-    padding: 10px;
-    margin:10px;
-    left: 639px;
-    top: 88px;
-    
-    font-family: Prociono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: justify;
-}
-
-.mining-story img {
-    position: absolute;
-    width: 595.81px;
-    height: 400px;
-    left: 10px;
-    top: 138px;
-}
-
-
-
